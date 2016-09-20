@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<script src="jquery_1.12.4.min.js"></script>
+
+<body>
+Write a function that will accept a unix timeStamp and covert to its UTC equivalent value
+
+    
+<br/>
+OUTPUT printed is
+<p id="demo"></p>
+<br>
+<input type="button" name="click" value="Please Click this" onclick="PrintTimestamp();">
+</body>
+<script type="text/javascript">
+function PrintTimestamp()
+{
+	var unix_timestamp = new Date();
+
+	unix_timestamp.toUTCString();
+
+	document.getElementById("demo").innerHTML = unix_timestamp;	
+}
+</script>
+</html>
+

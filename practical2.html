@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<script src="jquery_1.12.4.min.js"></script>
+
+<body>
+2. Update program - 2 of Practicals Day 2 to add a method that will print name (called printName()) of each student object in its prototype.
+Answer printed in COSOLE
+<p id="demo"></p>
+</body>
+<script type="text/javascript">
+var person1 = {
+    name:"John",
+    age:50,
+    height:"5ft"
+};
+var person2 = {
+    name:"Sam",
+    age:40,
+    height:"6ft"
+};
+var person3 = {
+    name:"David",
+    age:30,
+    height:"5ft 8"
+};
+printName(person1);
+
+function printName(obj)
+{
+  console.log(obj.name);
+  document.getElementById("demo").innerHTML =obj.name;
+
+  
+}
+</script>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<script src="jquery_1.12.4.min.js"></script>
+
+<body>
+  Write a function that will accept a single dimensional array whose value will be like ['00','01','11','10','11','00'] and break it into a 2 dimensional array like the following:
+    [
+        [0,0,1,1,1,0]
+        [0,1,1,0,1,0]
+    ]
+    the  length of array can be dynamic and contain as many values as possible
+<br/>
+
+<p id="demo" style="color:red;">OUTPUT printed is CONSOLE</p>
+<br>
+<input type="button" name="click" value="Please Click this" onclick="ConvertArray();">
+</body>
+<script type="text/javascript">
+function ConvertArray()
+{
+var items=['00','01','11','10','11','00'];
+//console.log(items[0][0]); // 1
+//console.log(items);
+
+console.log(getCol(items,0)); 
+console.log(getCol(items,1)); 
+}
+		function getCol(matrix, col){
+       var column = [];
+       for(var i=0; i<matrix.length; i++){
+          column.push(matrix[i][col]);
+       }
+       return column;
+    }
+
+   
+</script>
+</html>
+

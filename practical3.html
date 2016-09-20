@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<script src="jquery_1.12.4.min.js"></script>
+
+<body>
+Write a program that will do the following:
+    1. Accept two string values as arguments, where first value will be a long word(can be any random characters as well), second string will be a single character or substring that will         already exist in the first value.
+    2. The function should then return an object with properties - 'count' which will count the no of occurrences of substring in the first value, ' lastIndex' which will return the index of  last occurrence of the substring in the first value.  return -1 if the substring can't be found
+
+    OUTPUT printed in Console
+<br/>
+<input type="text" id="str1" />
+<input type="text" id="str2" />
+<br>
+<input type="button" name="click" onclick="MyFun();">
+</body>
+<script type="text/javascript">
+function MyFun()
+{
+  				var str_val2 = document.getElementById("str2").value;	
+				var string = document.getElementById("str1").value;
+				
+				
+		var count = 0;
+		for(var i=0; string.length > i; i++)
+		{
+
+		    if(string.charAt(i) == str_val2)
+		    {
+		        ++count; 
+		    }
+		}
+				var outputval = {value:string, occurrence:count}; 
+				console.log(outputval);
+				alert(count);  
+}
+  
+  
+</script>
+</html>
+

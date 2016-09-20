@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<script src="jquery_1.12.4.min.js"></script>
+
+<body>
+<p id="demo"></p>
+Printed in CONSOLE
+
+Write a program to calculate factorial using recursive strategy.
+
+
+</body>
+<script type="text/javascript">
+   //recursive
+
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  
+  // This is it! Recursion!!
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(3));
+/*
+var obj = {};
+r
+obj.add = function(val1, val2) {
+var mao  = this;
+    var inner = function() {
+        this.sum = val1 + val2;
+    }
+    inner();
+}
+obj.add(2, 4);
+console.log(obj.sum);
+*/
+</script>
+</html>
+
